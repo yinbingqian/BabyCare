@@ -2,400 +2,278 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f2f2f2"
+    android:background="#f8f8f8"
     android:orientation="vertical" >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:background="@drawable/topbg" >
+        android:layout_height="50dp"
+        android:background="#ffb34b" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:text="@string/bottomtitle02"
-            android:textColor="@color/black_color"
-            android:textSize="20sp" />
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/topbg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="通知：五年级一班家长会在4月23日举行...."
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/usermainpage_bg_center"
-        android:orientation="vertical" >
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        tools:ignore="DisableBaselineAlignment" >
 
-        <RelativeLayout
-            android:id="@+id/garden_layout_news"
+        <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="52dip"
-            android:clickable="true" >
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment" >
 
-            <ImageView
-                android:id="@+id/front_img_01"
-                android:layout_width="36.0dip"
-                android:layout_height="36.0dip"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dip"
-                android:background="@drawable/iconnews"
-                android:scaleType="fitXY" />
+            <RelativeLayout
+                android:id="@+id/garden_layout_photo"
+                android:layout_width="1dp"
+                android:layout_height="86dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
 
-            <TextView
-                android:id="@+id/news_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dip"
-                android:layout_marginTop="7dip"
-                android:layout_toRightOf="@id/front_img_01"
-                android:text="@string/titlenews"
-                android:textColor="#202020"
-                android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/front_img_02"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/iconphoto"
+                    android:gravity="center"
+                    android:scaleType="fitXY" />
 
-            <TextView
-                android:id="@+id/newsshow_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/news_text"
-                android:layout_marginLeft="10dip"
-                android:layout_toRightOf="@id/front_img_01"
-                android:text="@string/titlenewsshow"
-                android:textColor="#808080"
-                android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/photo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/front_img_02"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dip"
+                    android:gravity="center"
+                    android:text="@string/titlephoto"
+                    android:textColor="#525252"
+                    android:textSize="14dp" />
+            </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/row_img_02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dip"
-                android:scaleType="matrix"
-                android:src="@drawable/mm_submenu" />
-        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/garden_layout_video"
+                android:layout_width="1dp"
+                android:layout_height="86dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
 
-        <ImageView
+                <ImageView
+                    android:id="@+id/front_img_03"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/iconvideo"
+                    android:gravity="center"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/video_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/front_img_03"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dip"
+                    android:gravity="center"
+                    android:text="@string/titlevideo"
+                    android:textColor="#525252"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/garden_layout_topic"
+                android:layout_width="1dp"
+                android:layout_height="86dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/front_img_06"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/icontopic"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/topic_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/front_img_06"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dip"
+                    android:gravity="center"
+                    android:text="@string/titletopic"
+                    android:textColor="#525252"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/garden_layout_food"
+                android:layout_width="1dp"
+                android:layout_height="86dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/front_img_04"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/iconfood"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/food_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/front_img_04"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dip"
+                    android:gravity="center"
+                    android:text="@string/titlefood"
+                    android:textColor="#525252"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="1dip"
-            android:layout_marginLeft="60dip"
-            android:background="@drawable/line" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment" >
 
-        <RelativeLayout
-            android:id="@+id/garden_layout_photo"
-            android:layout_width="fill_parent"
-            android:layout_height="52dip"
-            android:clickable="true" >
+            <RelativeLayout
+                android:id="@+id/garden_layout_course"
+                android:layout_width="1dp"
+                android:layout_height="86dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
 
-            <ImageView
-                android:id="@+id/front_img_02"
-                android:layout_width="36.0dip"
-                android:layout_height="36.0dip"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dip"
-                android:background="@drawable/iconphoto"
-                android:scaleType="fitXY" />
+                <ImageView
+                    android:id="@+id/front_img_08"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/iconcourse"
+                    android:scaleType="fitXY" />
 
-            <TextView
-                android:id="@+id/photo_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dip"
-                android:layout_marginTop="7dip"
-                android:layout_toRightOf="@id/front_img_02"
-                android:text="@string/titlephoto"
-                android:textColor="#202020"
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/course_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/front_img_08"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dip"
+                    android:text="@string/titlecourse"
+                    android:textColor="#525252"
+                    android:textSize="14dp" />
+            </RelativeLayout>
 
-            <TextView
-                android:id="@+id/photoshow_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/photo_text"
-                android:layout_marginLeft="10dip"
-                android:layout_toRightOf="@id/front_img_02"
-                android:text="@string/titlephotoshow"
-                android:textColor="#808080"
-                android:textSize="12sp" />
+            <RelativeLayout
+                android:id="@+id/garden_layout_chuqin"
+                android:layout_width="1dp"
+                android:layout_height="86dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
 
-            <ImageView
-                android:id="@+id/row_img_02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dip"
-                android:scaleType="matrix"
-                android:src="@drawable/mm_submenu" />
-        </RelativeLayout>
+                <ImageView
+                    android:id="@+id/front_img_05"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/iconchuqin"
+                    android:scaleType="fitXY" />
 
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="1dip"
-            android:layout_marginLeft="60dip"
-            android:background="@drawable/line" />
+                <TextView
+                    android:id="@+id/chuqin_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/front_img_05"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dip"
+                    android:text="@string/titlechuqin"
+                    android:textColor="#525252"
+                    android:textSize="14dp" />
+            </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/garden_layout_video"
-            android:layout_width="fill_parent"
-            android:layout_height="52dip"
-            android:clickable="true" >
+            <RelativeLayout
+                android:id="@+id/garden_layout_news"
+                android:layout_width="1dp"
+                android:layout_height="86dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center" >
 
-            <ImageView
-                android:id="@+id/front_img_03"
-                android:layout_width="36.0dip"
-                android:layout_height="36.0dip"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dip"
-                android:background="@drawable/iconvideo"
-                android:scaleType="fitXY" />
+                <ImageView
+                    android:id="@+id/front_img_01"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/iconnews"
+                    android:scaleType="fitXY" />
 
-            <TextView
-                android:id="@+id/video_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dip"
-                android:layout_marginTop="7dip"
-                android:layout_toRightOf="@id/front_img_03"
-                android:text="@string/titlevideo"
-                android:textColor="#202020"
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/news_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/front_img_01"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dip"
+                    android:text="@string/titlenews"
+                    android:textColor="#525252"
+                    android:textSize="14dp" />
+            </RelativeLayout>
 
-            <TextView
-                android:id="@+id/videoshow_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/video_text"
-                android:layout_marginLeft="10dip"
-                android:layout_toRightOf="@id/front_img_03"
-                android:text="@string/titlevideoshow"
-                android:textColor="#808080"
-                android:textSize="12sp" />
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" >
 
-            <ImageView
-                android:id="@+id/row_img_02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dip"
-                android:scaleType="matrix"
-                android:src="@drawable/mm_submenu" />
-        </RelativeLayout>
-
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="1dip"
-            android:layout_marginLeft="60dip"
-            android:background="@drawable/line" />
-
-        <RelativeLayout
-            android:id="@+id/garden_layout_topic"
-            android:layout_width="fill_parent"
-            android:layout_height="52dip"
-            android:clickable="true" >
-
-            <ImageView
-                android:id="@+id/front_img_06"
-                android:layout_width="36.0dip"
-                android:layout_height="36.0dip"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dip"
-                android:background="@drawable/icontopic"
-                android:scaleType="fitXY" />
-
-            <TextView
-                android:id="@+id/topic_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dip"
-                android:layout_marginTop="7dip"
-                android:layout_toRightOf="@id/front_img_06"
-                android:text="@string/titletopic"
-                android:textColor="#202020"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/topicshow_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/topic_text"
-                android:layout_marginLeft="10dip"
-                android:layout_toRightOf="@id/front_img_06"
-                android:text="@string/titletopicshow"
-                android:textColor="#808080"
-                android:textSize="12sp" />
-
-            <ImageView
-                android:id="@+id/row_img_02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dip"
-                android:scaleType="matrix"
-                android:src="@drawable/mm_submenu" />
-        </RelativeLayout>
-
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="1dip"
-            android:layout_marginLeft="60dip"
-            android:background="@drawable/line" />
-
-        <RelativeLayout
-            android:id="@+id/garden_layout_food"
-            android:layout_width="fill_parent"
-            android:layout_height="52dip"
-            android:clickable="true" >
-
-            <ImageView
-                android:id="@+id/front_img_04"
-                android:layout_width="36.0dip"
-                android:layout_height="36.0dip"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dip"
-                android:background="@drawable/iconfood"
-                android:scaleType="fitXY" />
-
-            <TextView
-                android:id="@+id/food_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dip"
-                android:layout_marginTop="7dip"
-                android:layout_toRightOf="@id/front_img_04"
-                android:text="@string/titlefood"
-                android:textColor="#202020"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/foodshow_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/food_text"
-                android:layout_marginLeft="10dip"
-                android:layout_toRightOf="@id/front_img_04"
-                android:text="@string/titlefoodshow"
-                android:textColor="#808080"
-                android:textSize="12sp" />
-
-            <ImageView
-                android:id="@+id/row_img_02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dip"
-                android:scaleType="matrix"
-                android:src="@drawable/mm_submenu" />
-        </RelativeLayout>
-
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="1dip"
-            android:layout_marginLeft="60dip"
-            android:background="@drawable/line" />
-
-        <RelativeLayout
-            android:id="@+id/garden_layout_course"
-            android:layout_width="fill_parent"
-            android:layout_height="52dip"
-            android:clickable="true" >
-
-            <ImageView
-                android:id="@+id/front_img_08"
-                android:layout_width="36.0dip"
-                android:layout_height="36.0dip"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dip"
-                android:background="@drawable/iconcourse"
-                android:scaleType="fitXY" />
-
-            <TextView
-                android:id="@+id/course_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dip"
-                android:layout_marginTop="7dip"
-                android:layout_toRightOf="@id/front_img_08"
-                android:text="@string/titlecourse"
-                android:textColor="#202020"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/courseshow_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/course_text"
-                android:layout_marginLeft="10dip"
-                android:layout_toRightOf="@id/front_img_08"
-                android:text="@string/titlecourseshow"
-                android:textColor="#808080"
-                android:textSize="12sp" />
-
-            <ImageView
-                android:id="@+id/row_img_02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dip"
-                android:scaleType="matrix"
-                android:src="@drawable/mm_submenu" />
-        </RelativeLayout>
-
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="1dip"
-            android:layout_marginLeft="60dip"
-            android:background="@drawable/line" />
-
-        <RelativeLayout
-            android:id="@+id/garden_layout_chuqin"
-            android:layout_width="fill_parent"
-            android:layout_height="52dip"
-            android:clickable="true" >
-
-            <ImageView
-                android:id="@+id/front_img_05"
-                android:layout_width="36.0dip"
-                android:layout_height="36.0dip"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dip"
-                android:background="@drawable/iconchuqin"
-                android:scaleType="fitXY" />
-
-            <TextView
-                android:id="@+id/chuqin_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dip"
-                android:layout_marginTop="7dip"
-                android:layout_toRightOf="@id/front_img_05"
-                android:text="@string/titlechuqin"
-                android:textColor="#202020"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/chuqinshow_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/chuqin_text"
-                android:layout_marginLeft="10dip"
-                android:layout_toRightOf="@id/front_img_05"
-                android:text="@string/titlechuqinshow"
-                android:textColor="#808080"
-                android:textSize="12sp" />
-
-            <ImageView
-                android:id="@+id/row_img_02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dip"
-                android:scaleType="matrix"
-                android:src="@drawable/mm_submenu" />
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/news_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/front_img_01"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="7dip"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
