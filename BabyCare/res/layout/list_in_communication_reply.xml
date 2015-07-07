@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/topic_listitem_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dp"
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginRight="5.0dp"
+        android:layout_marginTop="5.0dp" >
+
+        <TextView
+            android:id="@+id/list_in_com_reply_num_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:background="@color/blue_light"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_in_com_reply_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@id/list_in_com_reply_num_text"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:lines="2"
+            android:textColor="@color/black"
+            android:textSize="16.0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

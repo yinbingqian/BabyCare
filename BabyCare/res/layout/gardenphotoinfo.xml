@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <RelativeLayout
+        android:id="@+id/journalinfo_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/journalbottom_bg" >
+
+        <ZoomControls
+            android:id="@+id/journalinfo_zoomCtrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+        </ZoomControls>
+
+        <TextView
+            android:id="@+id/journalinfo_pagechip_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:textColor="@color/white"
+            android:textSize="15.0dip" />
+    </RelativeLayout>
+
+    <com.lnpdit.util.PhotoZoomView
+        android:id="@+id/journalinfo_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/journalinfo_bottom_layout" >
+    </com.lnpdit.util.PhotoZoomView>
+
+    <ProgressBar
+        android:id="@+id/journal_info_progress_large"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/journal_info_previouspage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/previous_page" />
+
+    <Button
+        android:id="@+id/journal_info_nextpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/next_page" />
+
+</RelativeLayout>

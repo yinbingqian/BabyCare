@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <LinearLayout
+        android:id="@+id/p_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/topbg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/titletopic"
+                android:textColor="@color/black_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/gardentopic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:drawableLeft="@drawable/back_seletor"
+                android:text="@string/back"
+                android:textColor="@drawable/text_blue"
+                android:textSize="@dimen/sixteen" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/layout_top" >
+
+            <RelativeLayout
+                android:id="@+id/topic_progress_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ProgressBar
+                    android:id="@+id/topic_progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:indeterminateDrawable="@drawable/progressbg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/topic_progressbar"
+                    android:text="正在加载话题..."
+                    android:textColor="@color/darkgray"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/topic_timeout_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/topic_timeout_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="网络异常，请检查您的网络."
+                    android:textColor="@color/darkgray"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/topic_timeout_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/topic_timeout_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/timeout_refresh_bt"
+                    android:text="重 试"
+                    android:textColor="@color/dimgray" />
+            </RelativeLayout>
+
+            <com.lnpdit.util.PullDownView
+                android:id="@+id/topic_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/list_com_content_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_play_audio_bt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/com_content_bg_top" />
+
+    <RelativeLayout
+        android:id="@+id/list_com_content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_com_content_layout_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/com_content_bg_center" >
+
+        <ImageView
+            android:id="@+id/list_com_userphoto_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/contact_icon" />
+
+        <TextView
+            android:id="@+id/list_com_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/list_com_userphoto_img"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/list_com_userphoto_img"
+            android:text="王元石"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_com_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/list_com_userphoto_img"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/list_com_userphoto_img"
+            android:text="2013/4/28 10:51"
+            android:textColor="@color/darkgray"
+            android:textSize="13.0dip" />
+
+        <TextView
+            android:id="@+id/list_com_dev_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/list_com_userphoto_img"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="来自：Android客户端"
+            android:textColor="@color/darkgray"
+            android:textSize="12.0dip" />
+
+        <Button
+            android:id="@+id/list_play_audio_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/list_play_audio" />
+
+        <TextView
+            android:id="@+id/list_com_reciver"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_com_userphoto_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10.0dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="#王元石 #郑旭东"
+            android:textColor="@color/blue_light"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_com_remark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_com_reciver"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10.0dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="下午1点开会，收到请回复。"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/list_com_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/list_com_remark"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp" />
+
+        <LinearLayout
+            android:id="@+id/list_com_bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_com_img"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <!--
+            <RelativeLayout
+                android:id="@+id/list_com_bottom_trans_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/com_list_card_btn1" >
+
+                <TextView
+                    android:id="@+id/list_com_bottom_centerpoint1"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/list_com_bottom_centerpoint1"
+                    android:background="@drawable/com_card_trans_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/list_com_bottom_centerpoint1"
+                    android:text="转发"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            -->
+
+            <RelativeLayout
+                android:id="@+id/list_com_bottom_reply_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/com_list_card_btn1" >
+
+                <TextView
+                    android:id="@+id/list_com_bottom_centerpoint2"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/list_com_bottom_centerpoint2"
+                    android:background="@drawable/com_card_reply_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/list_com_bottom_centerpoint2"
+                    android:text="回复"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/list_com_bottom_delete_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/com_list_card_btn3" >
+
+                <TextView
+                    android:id="@+id/list_com_bottom_centerpoint3"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/list_com_bottom_centerpoint3"
+                    android:background="@drawable/com_card_delete_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/list_com_bottom_centerpoint3"
+                    android:text="删除"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/list_com_content_layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_com_content_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/com_content_bg_bottom" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/list_com_time" />
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/list_in_reply_manage_topic_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/list_in_reply_manage_topic_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/reply_manage_topic_icon" />
+
+        <Button
+            android:id="@+id/list_in_reply_manage_delete_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/reply_delete" />
+
+        <TextView
+            android:id="@+id/list_in_reply_manage_topic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/list_in_reply_manage_delete_bt"
+            android:layout_toRightOf="@+id/list_in_reply_manage_topic_icon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="国内汽油比美国贵1.5元 1升油钱3成税"
+            android:textColor="@color/dimgray"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_in_reply_manage_reply_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_in_reply_manage_topic_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/reply_manage_reply_bg" >
+
+        <TextView
+            android:id="@+id/list_in_reply_manage_reply_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="6"
+            android:text="油太贵了，太贵了，贵了，了......"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/list_in_reply_manage_reply_text" >
+
+            <TextView
+                android:id="@+id/list_in_reply_manage_user_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="王元石（手机用户）"
+                android:textColor="@color/dimgray"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/list_in_reply_manage_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text="2013-2-26 0:29:00"
+                android:textColor="@color/dimgray"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/list_in_reply_manage_reply_layout" />
+
+</RelativeLayout>

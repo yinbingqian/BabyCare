@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <RelativeLayout
+        android:id="@+id/topic_title_content_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbg" >
+
+        <TextView
+            android:id="@+id/policy_content_head_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/gardentopicreply_back"
+            android:text="话题标题"
+            android:textColor="@color/blue_light"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gardentopicreply_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:drawableLeft="@drawable/back_seletor"
+            android:text="@string/back"
+            android:textColor="@drawable/text_blue"
+            android:textSize="@dimen/sixteen" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/topic_reply_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/topic_title_content_head_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="发表时间：2013-6-6 9:56:00"
+        android:textColor="@color/dimgray"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/policy_content_title_line_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic_reply_time_text"
+        android:background="@drawable/main_title_shadow" />
+
+    <RelativeLayout
+        android:id="@+id/topic_reply_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFFFF" >
+
+        <Button
+            android:id="@+id/topic_reply_commit_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/push_edit_send" />
+
+        <EditText
+            android:id="@+id/topic_reply_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/topic_reply_commit_bt"
+            android:background="@drawable/push_edit_editbg"
+            android:hint="请在此输入回复内容"
+            android:padding="6dp"
+            android:textColor="@color/dimgray"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/topic_reply_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/topic_reply_edit_layout"
+        android:layout_below="@+id/policy_content_title_line_img"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/listview_line4" >
+    </ListView>
+
+</RelativeLayout>

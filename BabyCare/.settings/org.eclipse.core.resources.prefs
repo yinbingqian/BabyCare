@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/com/lnpdit/chat/ChatActivity.java=UTF-8
+encoding//src/com/lnpdit/chat/ChatAllHistoryActivity.java=UTF-8
+encoding//src/com/lnpdit/monitor/VideoPlayerActivity.java=UTF-8
+encoding//src/com/lnpdit/service/MessengerService.java=UTF-8
+encoding//src/com/lnpdit/util/PreferenceUtils.java=UTF-8
+encoding//src/com/lnpdit/util/TipItemizedOverlay.java=UTF-8
+encoding//src/com/lnpdit/util/adapter/ChatAllHistoryAdapter.java=UTF-8
+encoding//src/com/lnpdit/util/adapter/ImageBucketAdapter.java=UTF-8

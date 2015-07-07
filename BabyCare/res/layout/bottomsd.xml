@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res/com.lnpdit.babycare"
+    android:id="@+id/bottomlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <com.lnpdit.widget.Panel
+            android:id="@+id/bottomPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            panel:animationDuration="500"
+            panel:closedHandle="@drawable/bottom_switcher_collapsed_background"
+            panel:content="@+id/panelContent"
+            panel:handle="@+id/panelHandle"
+            panel:openedHandle="@drawable/bottom_switcher_expanded_background"
+            panel:position="bottom" >
+
+            <Button
+                android:id="@+id/panelHandle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_gravity="right" />
+
+            <LinearLayout
+                android:id="@+id/panelContent"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/bottombg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/last"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/last_icon" />
+
+                <Button
+                    android:id="@+id/play"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/icon_pause" />
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/next_icon" />
+
+                <Button
+                    android:id="@+id/zoomin"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/zoom_in" />
+
+                <Button
+                    android:id="@+id/zoomout"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/zoom_out" />
+
+                <Button
+                    android:id="@+id/focusin"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/focus_in" />
+
+                <Button
+                    android:id="@+id/focusout"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/focus_out" />
+
+                <Button
+                    android:id="@+id/snap"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/snapbtn_icon" />
+
+                <Button
+                    android:id="@+id/record"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/icon_record" />
+
+                <Button
+                    android:id="@+id/talk"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/talk" />
+
+                <Button
+                    android:id="@+id/favor"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/icon_favor" />
+
+                <Button
+                    android:id="@+id/bottomback"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_back" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/traffic"
+                    style="@style/usercentertitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|right" />
+            </FrameLayout>
+        </com.lnpdit.widget.Panel>
+    </LinearLayout>
+
+</LinearLayout>

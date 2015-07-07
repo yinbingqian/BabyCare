@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="top_height">160dp</dimen>
+    <dimen name="eightyheight">80dp</dimen>
+    <dimen name="fortyheight">40dp</dimen>
+    <dimen name="oneheight">110dp</dimen>
+    <dimen name="bigheight">110dp</dimen>
+    <dimen name="maxheight">300dp</dimen>
+    <dimen name="thirtyheight">30dp</dimen>
+    <dimen name="space_tab_l_r">20dip</dimen>
+    <dimen name="space_prolist_l_r">25dip</dimen>
+    <dimen name="btn_lay_height">35dip</dimen>
+    <dimen name="btn_lay_weight">90dp</dimen>
+    <dimen name="banner_lay_height">180dp</dimen>
+    <dimen name="banner_height">160dp</dimen>
+    <dimen name="sixteen">16sp</dimen>
+    <dimen name="textsize">14sp</dimen>
+    <dimen name="jianju">12dp</dimen>
+    <dimen name="padding_right">15dp</dimen>
+    <dimen name="jianju2">8dp</dimen>
+    <dimen name="tou_weight_height">85dp</dimen>
+    <dimen name="tou_weight_height2">80dp</dimen>
+    <dimen name="tou_weight_height3">55dp</dimen>
+    <dimen name="tou_weight_height4">50dp</dimen>
+    <dimen name="tou_weight_height5">66dp</dimen>
+    <dimen name="tou_weight_height6">40dp</dimen>
+    <dimen name="tab_height">38dp</dimen>
+    <dimen name="tab_height2">30dp</dimen>
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+
+</resources>

@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <LinearLayout
+        android:id="@+id/p_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/topbg" >
+
+            <TextView
+                android:id="@+id/contact_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="通讯录"
+                android:textColor="@color/black_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/contact_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:drawableLeft="@drawable/back_seletor"
+                android:text="@string/back"
+                android:textColor="@drawable/text_blue"
+                android:textSize="@dimen/sixteen" />
+
+            <TextView
+                android:id="@+id/contact_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:text="刷新"
+                android:textColor="@drawable/text_blue"
+                android:textSize="@dimen/sixteen" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/layout_contact"
+            android:background="@drawable/bg" >
+
+            <RelativeLayout
+                android:id="@+id/contact_goload_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    android:id="@+id/contact_goLoad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:indeterminateDrawable="@drawable/wait_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/contact_goLoad"
+                    android:text="正在获取数据，请稍等。"
+                    android:textColor="@color/dimgray"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/list_view_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:scrollbars="none" />
+
+            <com.lnpdit.util.MyLetterListView
+                android:id="@+id/MyLetterListView01"
+                android:layout_width="30dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="#40000000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

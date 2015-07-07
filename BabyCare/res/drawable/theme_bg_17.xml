@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- android:gravity="bottom|left" -->
+<!-- android:tileMode="repeat" -->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="top|right"
+    android:src="@drawable/bk2" />

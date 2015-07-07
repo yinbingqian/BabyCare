@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <RelativeLayout
+        android:id="@+id/push_edit_topbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbg" >
+
+        <TextView
+            android:id="@+id/layout_push_title_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="交流"
+            android:textColor="@color/black_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/gardenpushedit_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:drawableLeft="@drawable/back_seletor"
+            android:text="@string/back"
+            android:textColor="@drawable/text_blue"
+            android:textSize="@dimen/sixteen" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/push_edit_topbar_layout"
+        android:background="#DDDDDD" >
+
+        <RelativeLayout
+            android:id="@+id/push_edit_content1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/push_edit_bg1_click" >
+
+            <ImageButton
+                android:id="@+id/layout_push_contact_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/push_edit_contact_icon" />
+
+            <TextView
+                android:id="@+id/layout_push_contact_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/layout_push_contact_icon"
+                android:text="点击添加联系人"
+                android:textColor="@color/dimgray"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/layout_push_add_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/push_edit_add_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/push_edit_content2"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF" >
+
+            <Button
+                android:id="@+id/layout_push_commit_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/push_edit_send" />
+
+            <EditText
+                android:id="@+id/layout_push_remark_d"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/layout_push_commit_d"
+                android:background="@drawable/push_edit_editbg"
+                android:hint="请在此输入文字内容"
+                android:padding="6dp"
+                android:textColor="@color/dimgray"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/push_edit_content3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/push_edit_content2"
+            android:layout_below="@+id/push_edit_content1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/push_edit_bg2" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/push_edit_camera_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/push_edit_camera_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/push_edit_camera_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/push_edit_camera_icon"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/push_edit_camera_icon"
+                        android:text="注:点击拍摄照片按钮进行拍照操作，每次可附带一张照片."
+                        android:textColor="@color/dimgray"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/layout_push_camera_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/push_edit_camera_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/push_camera" />
+
+                    <ImageView
+                        android:id="@+id/layout_push_img_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/push_edit_camera_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/push_edit_centerline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/push_edit_camera_layout"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/listline" />
+
+                <RelativeLayout
+                    android:id="@+id/push_edit_record_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/push_edit_centerline" >
+
+                    <ImageView
+                        android:id="@+id/push_edit_record_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/push_edit_voice_icon" />
+
+                    <TextView
+                        android:id="@+id/push_edit_record_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/push_edit_record_icon"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="00:01"
+                        android:textColor="@color/dimgray"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/push_edit_record_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/push_edit_record_icon"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@+id/push_edit_record_time_text"
+                        android:layout_toRightOf="@+id/push_edit_record_icon"
+                        android:text="注:点录音按钮进行音频录制，再次点击停止音频录制，每次可附带一段音频."
+                        android:textColor="@color/dimgray"
+                        android:textSize="13dp" />
+
+                    <ToggleButton
+                        android:id="@+id/layout_push_record_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/push_edit_record_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/audio_check_btn_selector"
+                        android:textSize="1dp" />
+
+                    <Button
+                        android:id="@+id/layout_push_audio_file_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/push_edit_record_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/audio_file_play"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/push_edit_record_layout" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

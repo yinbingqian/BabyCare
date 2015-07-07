@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:drawablePadding="0dip"
+    android:ellipsize="marquee"
+    android:fadingEdge="horizontal"
+    android:gravity="top|center_horizontal"
+    android:maxLines="2"
+    android:padding="2dip"
+    android:textColor="@color/bright_text_dark_focused" >
+
+    <com.lnpdit.photo.FlingGallery
+        android:id="@+id/horizontalview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true" >
+    </com.lnpdit.photo.FlingGallery>
+
+    <com.lnpdit.photo.zoom.ImageZoomView
+        android:id="@+id/zoomview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dip"
+        android:max="10000" />
+
+    <ImageView
+        android:id="@+id/removed"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="movedClick"
+        android:padding="20dp"
+        android:src="@drawable/thumb"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/temp_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/thumb"
+        android:visibility="gone" />
+
+</RelativeLayout>
