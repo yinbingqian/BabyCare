@@ -27,10 +27,10 @@ public class FrontPageActivity extends Activity implements OnClickListener {
 	View front_layout_record;
 	View front_layout_snap;
 	View front_layout_favor;
-	ImageView imageCamera;
-	ImageView imageRecord;
-	ImageView imageSnap;
-	ImageView imageFavor;
+//	ImageView imageCamera;
+//	ImageView imageRecord;
+//	ImageView imageSnap;
+//	ImageView imageFavor;
 	// ArrayList<Entity> dataList;//用来装载数据源的列表
 	List<ImageBucket> dataList;
 	AlbumHelper helper;
@@ -58,9 +58,9 @@ public class FrontPageActivity extends Activity implements OnClickListener {
 		front_layout_snap.setOnClickListener(this);
 		front_layout_favor.setOnClickListener(this);
 
-		imageCamera = (ImageView) findViewById(R.id.front_image_camera);
-		imageRecord = (ImageView) findViewById(R.id.front_image_record);
-		imageSnap = (ImageView) findViewById(R.id.front_image_snap);
+//		imageCamera = (ImageView) findViewById(R.id.front_image_camera);
+//		imageRecord = (ImageView) findViewById(R.id.front_image_record);
+//		imageSnap = (ImageView) findViewById(R.id.front_image_snap);
 
 		// checkSnapPath();
 		// helper = AlbumHelper.getHelper();
@@ -80,19 +80,19 @@ public class FrontPageActivity extends Activity implements OnClickListener {
 		ifFavor = loginBundle.getString("ifFavor").toString();
 		if (!ifCamera.equals("1")) {
 			front_layout_camera.setVisibility(View.GONE);
-			imageCamera.setVisibility(ImageView.GONE);
+//			imageCamera.setVisibility(ImageView.GONE);
 		}
 		if (!ifRecord.equals("1")) {
 			front_layout_record.setVisibility(View.GONE);
-			imageRecord.setVisibility(ImageView.GONE);
+//			imageRecord.setVisibility(ImageView.GONE);
 		}
 		if (!ifSnap.equals("1")) {
 			front_layout_snap.setVisibility(View.GONE);
-			imageSnap.setVisibility(ImageView.GONE);
+//			imageSnap.setVisibility(ImageView.GONE);
 		}
 		if (!ifFavor.equals("1")) {
 			front_layout_favor.setVisibility(View.GONE);
-			imageFavor.setVisibility(ImageView.GONE);
+//			imageFavor.setVisibility(ImageView.GONE);
 		}
 	}
 

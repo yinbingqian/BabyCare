@@ -7,17 +7,19 @@
 
     <ImageView
         android:id="@+id/file_icon"
-        android:layout_width="48dip"
-        android:layout_height="48dip" />
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:paddingLeft="15dp" />
 
     <TextView
         android:id="@+id/file_name"
         style="@style/devListStyle"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="4dp"
-        android:layout_weight="1.0"
-        android:textSize="15sp" />
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="班级"
+        android:textColor="#525252"
+        android:textSize="16dp" />
 
 </LinearLayout>

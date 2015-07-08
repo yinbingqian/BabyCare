@@ -81,8 +81,8 @@ public class SnapList extends Activity implements OnClickListener {
 		screenWidth = display.getWidth();
 		screenHeight = display.getHeight();
 
-		itemw = screenHeight / 5;
-		itemh = screenWidth / 5;
+		itemw = screenHeight / 2;
+		itemh = screenWidth / 2;
 
 		DisplayMetrics dm = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(dm);

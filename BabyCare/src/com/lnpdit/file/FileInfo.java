@@ -13,8 +13,8 @@ public class FileInfo {
 
 	public int getIconResourceId() {
 		if (IsDirectory) {
-			return R.drawable.record;
+			return R.drawable.deviceicon;
 		}
-		return R.drawable.record;
+		return R.drawable.deviceicon;
 	}
 }

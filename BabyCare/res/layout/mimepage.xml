@@ -7,16 +7,18 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:background="@drawable/topbg" >
+        android:layout_height="50dp"
+        android:background="#ffb34b" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:text="@string/bottomtitle04"
-            android:textColor="@color/black_color"
-            android:textSize="20sp" />
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -110,7 +112,6 @@
                 android:textColor="#202020"
                 android:textSize="16sp" />
         </RelativeLayout>
-
     </LinearLayout>
 
     <LinearLayout

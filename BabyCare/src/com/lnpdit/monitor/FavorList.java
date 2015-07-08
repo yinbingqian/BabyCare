@@ -136,10 +136,10 @@ public class FavorList extends passwordInterface implements
 
 					String stayLine = map.get("stayLine").toString();
 					if (stayLine.equals("1")) {
-						map.put("image", R.drawable.camera);
+						map.put("image", R.drawable.deviceicon);
 						map.put("title", map.get("chName").toString());
 					} else if (stayLine.equals("0")) {
-						map.put("image", R.drawable.cameraoffline);
+						map.put("image", R.drawable.deviceicon_grey);
 						map.put("title", map.get("chName").toString()
 								+ "(…Ë±∏¿Îœﬂ)");
 					}

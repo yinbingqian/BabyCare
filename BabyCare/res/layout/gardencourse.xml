@@ -13,22 +13,23 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/topbg" >
+            android:background="#ffb34b" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="@string/titlecourse"
-                android:textColor="@color/black_color"
-                android:textSize="20sp" />
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/gardencourse_back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="10dip"
+                android:layout_marginLeft="10dp"
                 android:drawableLeft="@drawable/back_seletor"
                 android:text="@string/back"
                 android:textColor="@drawable/text_blue"

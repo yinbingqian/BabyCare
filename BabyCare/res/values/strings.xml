@@ -2,10 +2,10 @@
 <resources>
 
     <string name="app_name">宝贝卫士</string>
-    <string name="bottomtitle01">视频监控</string>
+    <string name="bottomtitle01">时刻</string>
     <string name="bottomtitle02">幼儿园</string>
     <string name="bottomtitle03">聊天</string>
-    <string name="bottomtitle04">我的信息</string>
+    <string name="bottomtitle04">设置</string>
     <string name="titlecamera">实时视频</string>
     <string name="titlecamerashow">这里看到您的宝贝哦</string>
     <string name="titlerecord">录像回放</string>

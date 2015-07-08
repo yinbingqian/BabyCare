@@ -152,10 +152,10 @@ public class CameraList extends passwordInterface implements
 			map = (HashMap<String, Object>) devList.get(i);
 			String stayLine = map.get("stayLine").toString();
 			if (stayLine.equals("1")) {
-				map.put("image", R.drawable.camera);
+				map.put("image", R.drawable.deviceicon);
 				map.put("title", map.get("chName").toString());
 			} else if (stayLine.equals("0")) {
-				map.put("image", R.drawable.cameraoffline);
+				map.put("image", R.drawable.deviceicon_grey);
 				map.put("title", map.get("chName").toString() + "(设备离线)");
 			}
 
@@ -544,10 +544,10 @@ public class CameraList extends passwordInterface implements
 			HashMap<String, Object> map = new HashMap<String, Object>();
 
 			if (stayLine.equals("1")) {
-				map.put("image", R.drawable.camera);
+				map.put("image", R.drawable.deviceicon);
 				map.put("title", chName);
 			} else if (stayLine.equals("0")) {
-				map.put("image", R.drawable.cameraoffline);
+				map.put("image", R.drawable.deviceicon_grey);
 				map.put("title", chName + "(设备离线)");
 			}
 

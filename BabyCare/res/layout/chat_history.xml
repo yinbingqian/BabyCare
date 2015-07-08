@@ -13,24 +13,27 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="42dip"
-            android:background="@drawable/topbg" >
+            android:layout_height="50dp"
+            android:background="#ffb34b" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:text="@string/bottomtitle03"
-                android:textColor="@color/black_color"
-                android:textSize="20sp" />
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/gocontact"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="10dip"
+                android:background="@drawable/add"
                 android:text="@string/contact"
                 android:textColor="@drawable/text_blue"
                 android:textSize="@dimen/sixteen" />

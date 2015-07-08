@@ -60,8 +60,8 @@
 
                 <ImageView
                     android:id="@+id/front_img_02"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/iconphoto"
                     android:gravity="center"
@@ -90,8 +90,8 @@
 
                 <ImageView
                     android:id="@+id/front_img_03"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/iconvideo"
                     android:gravity="center"
@@ -120,8 +120,8 @@
 
                 <ImageView
                     android:id="@+id/front_img_06"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/icontopic"
                     android:scaleType="fitXY" />
@@ -149,8 +149,8 @@
 
                 <ImageView
                     android:id="@+id/front_img_04"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/iconfood"
                     android:scaleType="fitXY" />
@@ -185,8 +185,8 @@
 
                 <ImageView
                     android:id="@+id/front_img_08"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/iconcourse"
                     android:scaleType="fitXY" />
@@ -213,8 +213,8 @@
 
                 <ImageView
                     android:id="@+id/front_img_05"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/iconchuqin"
                     android:scaleType="fitXY" />
@@ -241,8 +241,8 @@
 
                 <ImageView
                     android:id="@+id/front_img_01"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/iconnews"
                     android:scaleType="fitXY" />
