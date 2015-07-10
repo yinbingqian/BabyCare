@@ -102,29 +102,11 @@ public class GardenPhotoActivity extends Activity implements OnClickListener {
 				String pic1 = cursor.getString(3);
 				String content1 = cursor.getString(4);
 				String crtime1 = cursor.getString(5);
-				cursor.moveToNext();
-				String webid2 = cursor.getString(1);
-				String title2 = cursor.getString(2);
-				String pic2 = cursor.getString(3);
-				String content2 = cursor.getString(4);
-				String crtime2 = cursor.getString(5);
+
 				cursor.moveToNext();
 				ImageAndTextJournal itj = new ImageAndTextJournal(
 						MessengerService.PIC_JOURNAL + pic1, webid1, title1,
-						pic1, content1, crtime1, MessengerService.PIC_JOURNAL
-								+ pic2, webid2, title2, pic2, content2, crtime2);
-				imageAndTexts.add(itj);
-			}
-			if (cursor.getCount() % 2 != 0) {
-				String webid = cursor.getString(1);
-				String title = cursor.getString(2);
-				String pic = cursor.getString(3);
-				String content = cursor.getString(4);
-				String crtime = cursor.getString(5);
-				ImageAndTextJournal itj = new ImageAndTextJournal(
-						MessengerService.PIC_JOURNAL + pic, webid, title, pic,
-						content, crtime, "none", "none", "none", "none",
-						"none", "none");
+						pic1, content1, crtime1);
 				imageAndTexts.add(itj);
 			}
 			ImageAndTextListPhotoAdapter itj_adapter = new ImageAndTextListPhotoAdapter(

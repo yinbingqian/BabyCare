@@ -58,22 +58,8 @@ public class ImageAndTextListPhotoAdapter extends
 		// Load the image and set it on the ImageView
 		String imageUrl1 = imageAndText.getImageUrl1();
 		ImageView imageView1 = viewCache.getImageView1();
-		String imageUrl2 = imageAndText.getImageUrl2();
-		ImageView imageView2 = viewCache.getImageView2();
 		imageView1.setTag(imageUrl1);
-		imageView2.setTag(imageUrl2);
 		Drawable cachedImage1 = asyncImageLoader.loadDrawable(imageUrl1,
-				new ImageCallback() {
-					public void imageLoaded(Drawable imageDrawable,
-							String imageUrl) {
-						ImageView imageViewByTag = (ImageView) listView
-								.findViewWithTag(imageUrl);
-						if (imageViewByTag != null) {
-							imageViewByTag.setImageDrawable(imageDrawable);
-						}
-					}
-				});
-		Drawable cachedImage2 = asyncImageLoader.loadDrawable(imageUrl2,
 				new ImageCallback() {
 					public void imageLoaded(Drawable imageDrawable,
 							String imageUrl) {
@@ -89,25 +75,15 @@ public class ImageAndTextListPhotoAdapter extends
 		} else {
 			imageView1.setImageDrawable(cachedImage1);
 		}
-		if (cachedImage2 == null) {
-			imageView2.setImageResource(R.drawable.default_microhot);
-		} else {
-			imageView2.setImageDrawable(cachedImage2);
-		}
 		// Set the text on the TextView
 		TextView textViewTitle1 = viewCache.getTextViewText1();
-		textViewTitle1.setText(imageAndText.getTitle1());
 		TextView textViewTitle2 = viewCache.getTextViewText2();
-		textViewTitle2.setText(imageAndText.getTitle2());
+		textViewTitle1.setText(imageAndText.getTitle1());
+		textViewTitle2.setText(imageAndText.getCrtime1());
 
-		if (imageAndText.getTitle2().toString().equals("none")) {
-			imageView2.setVisibility(8);
-			textViewTitle2.setVisibility(8);
-		}
+		
 		imageView1.setOnClickListener(new AdapterListener(position, imageView1,
 				imageUrl1, imageAndText.getWebId1()));
-		imageView2.setOnClickListener(new AdapterListener(position, imageView2,
-				imageUrl2, imageAndText.getWebId2()));
 
 		return rowView;
 	}

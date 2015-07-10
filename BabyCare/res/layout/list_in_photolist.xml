@@ -1,90 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f1f1f1" 
-    android:layout_marginTop="10dp">
+    android:background="#f1f1f1"
+    android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/list_in_journal_centerblank"
-        android:layout_width="1.0dip"
-        android:layout_height="1.0dip"
-        android:layout_centerInParent="true" />
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
 
-    <RelativeLayout
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c5c5c5" />
+
+    <LinearLayout
         android:id="@+id/list_in_journal_layout1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginBottom="20dp"
-        android:layout_toLeftOf="@+id/list_in_journal_centerblank"
-        android:background="#ffffff" >
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp" >
 
         <ImageView
             android:id="@+id/list_in_journal_img1"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/iconrecord" />
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/kids_photo"
+            android:scaleType="fitXY" />
 
         <TextView
             android:id="@+id/list_in_journal_text1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/list_in_journal_img1"
-            android:layout_alignRight="@id/list_in_journal_img1"
-            android:layout_below="@+id/list_in_journal_img1"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="10dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
             android:layout_marginTop="10dp"
-            android:ellipsize="end"
-            android:gravity="center"
-            android:singleLine="true"
-            android:text="相册图片"
+            android:gravity="left"
+            android:text="同学们积极参与老师布置的手工作业..."
             android:textColor="#525252"
-            android:textSize="20dp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/list_in_journal_layout2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginBottom="20dp"
-        android:layout_toRightOf="@+id/list_in_journal_centerblank"
-        android:background="#ffffff" >
-
-        <ImageView
-            android:id="@+id/list_in_journal_img2"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/iconrecord" />
+            android:textSize="17dp" />
 
         <TextView
             android:id="@+id/list_in_journal_text2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/list_in_journal_img2"
-            android:layout_alignRight="@+id/list_in_journal_img2"
-            android:layout_below="@+id/list_in_journal_img2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:ellipsize="end"
-            android:gravity="center"
-            android:singleLine="true"
-            android:text="相册图片"
-            android:textColor="#525252"
-            android:textSize="20dp" />
-    </RelativeLayout>
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="5月30日  下午10:17"
+            android:textColor="#b5b5b5"
+            android:textSize="14dp" />
+    </LinearLayout>
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#bdbdbd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
+
+</LinearLayout>

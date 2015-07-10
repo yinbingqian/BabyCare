@@ -95,7 +95,7 @@ public class GardenVideoActivity extends Activity implements OnClickListener {
 		int a = cursor.getCount();
 		cursor.moveToFirst();
 		if (cursor.moveToFirst()) {
-			for (int i = 0; i < cursor.getCount() / 2; i++) {
+			for (int i = 0; i < cursor.getCount(); i++) {
 				String webid1 = cursor.getString(1);
 				String title1 = cursor.getString(2);
 				String pic1 = cursor.getString(3);
@@ -105,39 +105,11 @@ public class GardenVideoActivity extends Activity implements OnClickListener {
 				String content1 = cursor.getString(7);
 				String crtime1 = cursor.getString(8);
 				cursor.moveToNext();
-				String webid2 = cursor.getString(1);
-				String title2 = cursor.getString(2);
-				String pic2 = cursor.getString(3);
-				String video2 = cursor.getString(4);
-				String extension2 = cursor.getString(5);
-				String size2 = cursor.getString(6);
-				String content2 = cursor.getString(7);
-				String crtime2 = cursor.getString(8);
-				cursor.moveToNext();
 				ImageAndTextVideo itv = new ImageAndTextVideo(
 						MessengerService.VIDEO_PATH + pic1, webid1, title1,
 						pic1, MessengerService.VIDEO_PATH + video1, extension1,
-						size1, content1, crtime1, MessengerService.VIDEO_PATH
-								+ pic2, webid2, title2, pic2,
-						MessengerService.VIDEO_PATH + video2, extension2,
-						size2, content2, crtime2);
+						size1, content1, crtime1);
 				imageAndTexts.add(itv);
-			}
-			if (cursor.getCount() % 2 != 0) {
-				String webid = cursor.getString(1);
-				String title = cursor.getString(2);
-				String pic = cursor.getString(3);
-				String video = cursor.getString(4);
-				String extension = cursor.getString(5);
-				String size = cursor.getString(6);
-				String content = cursor.getString(7);
-				String crtime = cursor.getString(8);
-				ImageAndTextVideo itj = new ImageAndTextVideo(
-						MessengerService.VIDEO_PATH + pic, webid, title, pic,
-						MessengerService.VIDEO_PATH + video, extension, size,
-						content, crtime, "none", "none", "none", "none",
-						"none", "none", "none", "none", "none");
-				imageAndTexts.add(itj);
 			}
 			ImageAndTextListVideolAdapter itj_adapter = new ImageAndTextListVideolAdapter(
 					GardenVideoActivity.this, imageAndTexts, listview, context);

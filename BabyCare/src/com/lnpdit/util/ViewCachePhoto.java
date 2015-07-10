@@ -13,7 +13,6 @@ public class ViewCachePhoto {
 	private TextView textViewTitle1;
 	private TextView textViewTitle2;
 	private ImageView imageView1;
-	private ImageView imageView2;
 
 	public ViewCachePhoto(View baseView) {
 		this.baseView = baseView;
@@ -25,13 +24,6 @@ public class ViewCachePhoto {
 					.findViewById(R.id.list_in_journal_img1);
 		}
 		return imageView1;
-	}
-	
-	public ImageView getImageView2() {
-		if(imageView2 == null){
-			imageView2 = (ImageView) baseView.findViewById(R.id.list_in_journal_img2);
-		}
-		return imageView2;
 	}
 
 	public TextView getTextViewText1() {

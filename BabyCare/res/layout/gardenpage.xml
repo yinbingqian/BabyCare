@@ -111,35 +111,6 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/garden_layout_topic"
-                android:layout_width="1dp"
-                android:layout_height="86dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:gravity="center" >
-
-                <ImageView
-                    android:id="@+id/front_img_06"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_centerHorizontal="true"
-                    android:background="@drawable/icontopic"
-                    android:scaleType="fitXY" />
-
-                <TextView
-                    android:id="@+id/topic_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/front_img_06"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="7dip"
-                    android:gravity="center"
-                    android:text="@string/titletopic"
-                    android:textColor="#525252"
-                    android:textSize="14dp" />
-            </RelativeLayout>
-
-            <RelativeLayout
                 android:id="@+id/garden_layout_food"
                 android:layout_width="1dp"
                 android:layout_height="86dp"
@@ -167,13 +138,6 @@
                     android:textColor="#525252"
                     android:textSize="14dp" />
             </RelativeLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:ignore="DisableBaselineAlignment" >
 
             <RelativeLayout
                 android:id="@+id/garden_layout_course"
@@ -202,6 +166,13 @@
                     android:textColor="#525252"
                     android:textSize="14dp" />
             </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment" >
 
             <RelativeLayout
                 android:id="@+id/garden_layout_chuqin"
@@ -260,6 +231,36 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/garden_layout_topic"
+                android:layout_width="1dp"
+                android:layout_height="86dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/front_img_06"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/icontopic"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/topic_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/front_img_06"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dip"
+                    android:gravity="center"
+                    android:text="@string/titletopic"
+                    android:textColor="#525252"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="1dp"
                 android:layout_height="100dp"
                 android:layout_weight="1" >
@@ -268,7 +269,19 @@
                     android:id="@+id/news_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/front_img_01"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="7dip"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/news_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dip"
                     android:layout_marginTop="7dip"
                     android:textSize="18sp" />
