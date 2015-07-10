@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f8f8f8" >
+    android:background="#f1f1f1" >
 
     <LinearLayout
         android:id="@+id/p_layout"
@@ -41,8 +41,15 @@
             android:id="@+id/news_list"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:background="#f1f1f1"
             android:cacheColorHint="#00000000"
-            android:divider="@drawable/listline" />
+            android:divider="@drawable/rectangle1"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:smoothScrollbar="true" />
     </LinearLayout>
 
 </RelativeLayout>

@@ -1,59 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="90dp" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical" >
 
-    <RelativeLayout
+    <TextView
         android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:layout_centerVertical="true"
-        android:layout_margin="5dp" >
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c5c5c5" />
+
+    <LinearLayout
+        android:id="@+id/list_in_journal_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp" >
 
         <ImageView
             android:id="@+id/list_in_news_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10.0dip"
-            android:background="@drawable/default_microhot" />
-
-        <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="25.0dip"
-            android:layout_marginRight="35.0dip"
-            android:layout_toRightOf="@id/list_in_news_icon" >
+            android:layout_height="170dp"
+            android:background="@drawable/kids_photo"
+            android:scaleType="fitXY" />
 
-            <TextView
-                android:id="@+id/list_in_news_content"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:ellipsize="end"
-                android:lineSpacingMultiplier="1.2"
-                android:maxLines="2"
-                android:textColor="@color/dimgray"
-                android:textSize="15.0dip" />
-
-            <TextView
-                android:id="@+id/list_in_news_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@id/list_in_news_content"
-                android:layout_below="@id/list_in_news_content"
-                android:textColor="@color/green_deep"
-                android:textSize="15.0dip" />
-        </RelativeLayout>
-
-        <ImageView
+        <TextView
+            android:id="@+id/list_in_news_content"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/list_arrow" />
-    </RelativeLayout>
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="同学们积极参与老师布置的手工作业..."
+            android:textColor="#525252"
+            android:textSize="17dp" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/list_in_news_time"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="5月30日  下午10:17"
+            android:textColor="#b5b5b5"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#bdbdbd" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
+
+</LinearLayout>
