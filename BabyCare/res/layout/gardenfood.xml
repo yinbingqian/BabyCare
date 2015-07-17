@@ -5,10 +5,11 @@
     android:background="#f2f2f2" >
 
     <LinearLayout
-        android:id="@+id/p_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:id="@+id/layout_left"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:background="#ffffff">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -24,22 +25,24 @@
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
-            <TextView
+            <Button
                 android:id="@+id/gardenfood_back"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
-                android:drawableLeft="@drawable/back_seletor"
-                android:text="@string/back"
-                android:textColor="@drawable/text_blue"
-                android:textSize="@dimen/sixteen" />
+                android:background="@drawable/back_seletor" />
+
         </RelativeLayout>
 
-        <WebView
-            android:id="@+id/web_food"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
+            <ListView
+                android:id="@+id/food_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/listline" />
     </LinearLayout>
+
+      
 
 </RelativeLayout>

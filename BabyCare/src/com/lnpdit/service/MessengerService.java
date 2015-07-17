@@ -69,6 +69,18 @@ public class MessengerService {
 	public static final String METHOD_COMMUNREPLYREMOVE = "CommunReplyRemove";
 	public static final String METHOD_GETLATESTNEWS = "GetLatestNews";
 	public static final String METHOD_GETNEWSCONTENT = "GetNewsContent";
+	public static final String METHOD_GETATTENDANCEMONTH = "GetAttendanceMonth";
+	public static final String METHOD_GETATTENDANCE = "GetAttendance";
+	public static final String METHOD_GETSOURCEFIRSTSHOW = "GetSoursefirstshow";
+	public static final String METHOD_GETSOURCEFORCLASSALL = "GetSourseForClassAll";
+	public static final String METHOD_GETSOURCEFORCLASSSINGLE = "GetSourseForClassSingle";
+	public static final String METHOD_GETFOODFIRSTSHOW = "GetfoodFirstShow";
+	public static final String METHOD_LOUDINFOINSERT = "LoudInfoInsert";
+	public static final String METHOD_GETFOODCOMMENT = "GetfoodComment";
+	public static final String METHOD_GETFOODCOMMENTINSERT = "GetfoodCommentInsert";
+	public static final String METHOD_GETlatestnewsinsert = "GetLatestNewsInsert";
+	public static final String METHOD_GETNEWSCOMMENT = "GetNewsComment ";
+	
 
 	public static final String WEEK = "week";
 

@@ -5,9 +5,34 @@
     android:background="#f2f2f2" >
 
     <LinearLayout
-        android:id="@+id/p_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="200dp"
+        android:orientation="vertical" >
+
+        <com.lnpdit.widget.RightMenuLinearLayout
+            android:id="@+id/mylaout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ListView
+                android:id="@+id/lv_set2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#414550"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/listline" >
+            </ListView>
+        </com.lnpdit.widget.RightMenuLinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_left"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
         android:orientation="vertical" >
 
         <RelativeLayout
@@ -24,22 +49,36 @@
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
-            <TextView
+            <Button
                 android:id="@+id/gardencourse_back"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
-                android:drawableLeft="@drawable/back_seletor"
-                android:text="@string/back"
-                android:textColor="@drawable/text_blue"
-                android:textSize="@dimen/sixteen" />
+                android:background="@drawable/back_seletor" />
+
+            <ImageView
+                android:id="@+id/iv2_set"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_menu_down" />
         </RelativeLayout>
 
-        <WebView
-            android:id="@+id/web_course"
+        <com.lnpdit.widget.RightMenuLinearLayout
+            android:id="@+id/mywebviewlaout"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
+            android:layout_height="wrap_content" >
+
+            <ListView
+                android:id="@+id/course_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/listline" />
+        </com.lnpdit.widget.RightMenuLinearLayout>
     </LinearLayout>
 
 </RelativeLayout>

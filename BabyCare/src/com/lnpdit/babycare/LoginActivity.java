@@ -141,7 +141,8 @@ public class LoginActivity extends passwordInterface implements OnClickListener 
 		String name = settings.getString(NAME, "");
 		String pass = settings.getString(PASS, "");
 		String remember = settings.getString(REMEMBER, "");
-		field_address.setText("221.180.149.151");
+		field_address.setText("221.180.149.201");
+//		field_address.setText("221.180.149.151");
 		field_name.setText(name);
 		field_pass.setText(pass);
 
