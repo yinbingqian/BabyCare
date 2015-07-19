@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:background="#f1f1f1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <Button
+                android:id="@+id/cancel_bt"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/comment_tv"
+                android:background="@null"
+                android:layout_marginRight="50dp"
+                android:text="取消"
+                android:textColor="#ffb34b"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comment_tv"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="评论"
+                android:textColor="#ffb34b"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/send_bt"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/comment_tv"
+                android:background="@null"
+                android:text="发送"
+                android:textColor="#ffb34b"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/addcomment_et"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="#525252"
+            android:background="#ffffff"
+            android:inputType="textNoSuggestions" />
+    </LinearLayout>
+
+</LinearLayout>

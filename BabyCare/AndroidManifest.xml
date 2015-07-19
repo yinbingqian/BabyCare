@@ -231,6 +231,15 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
+            android:name="com.lnpdit.garden.GardenFoodCommentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lnpdit.garden.GardenFoodAddCommentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.lnpdit.garden.GardenCourseActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />

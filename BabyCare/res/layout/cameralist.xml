@@ -43,7 +43,7 @@
                 android:layout_marginLeft="10dp"
                 android:drawableLeft="@drawable/back_seletor" />
 
-            <TextView
+        <!--    <TextView
                 android:id="@+id/cameralist_map"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -53,6 +53,7 @@
                 android:text="@string/map"
                 android:textColor="#ffffff"
                 android:textSize="18dp"/>
+        -->
         </RelativeLayout>
 
         <ListView

@@ -11,7 +11,7 @@ import org.ksoap2.transport.HttpTransportSE;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.content.Context;
-import android.content.SharedPreferences;
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
@@ -25,8 +25,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lnpdit.babycare.R;
+import com.lnpdit.garden.GardenFoodCommentActivity;
 import com.lnpdit.service.MessengerService;
-import com.lnpdit.util.adapter.NewsAdapter.AdapterListener;
 
 public class FoodAdapter extends BaseAdapter {
 	private class buttonViewHolder {
@@ -120,6 +120,8 @@ public class FoodAdapter extends BaseAdapter {
 				holder.comment_tv.setText(countcomment_str);
 				holder.good_bt.setOnClickListener(new AdapterListener(position,
 						foodid_str, phonecall));
+				holder.comment_bt.setOnClickListener(new CommentAdapterListener(position,
+						foodid_str, phonecall));
 			} catch (Exception e) {
 
 			}
@@ -131,6 +133,29 @@ public class FoodAdapter extends BaseAdapter {
 		int count = item.size();
 		for (int i = 0; i < count; i++) {
 			mAppList.add(item.get(i));
+		}
+	}
+	
+	class CommentAdapterListener implements OnClickListener {
+		private int position;
+		private String foodid;
+		private String phonecall;
+
+		public CommentAdapterListener(int pos, String _foodid, String _phonecall) {
+			// TODO Auto-generated constructor stub
+			position = pos;
+			foodid = _foodid;
+			phonecall = _phonecall;
+		}
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			Intent intent = new Intent();
+			intent.putExtra("foodid", foodid);
+			intent.putExtra("phonecall", phonecall);
+			intent.setClass(mContext, GardenFoodCommentActivity.class);
+			mContext.startActivity(intent);
 		}
 	}
 

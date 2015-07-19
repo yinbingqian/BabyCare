@@ -80,7 +80,7 @@ public class CameraList extends passwordInterface implements
 	// private ViewCenter videoView;
 	private GestureDetector gestureScanner;
 	private TextView cameralist_back;
-	private TextView cameralist_map;
+//	private TextView cameralist_map;
 
 	private Button btnRefresh;
 	private TextView tip;
@@ -114,8 +114,8 @@ public class CameraList extends passwordInterface implements
 
 		cameralist_back = (TextView) findViewById(R.id.cameralist_back);
 		cameralist_back.setOnClickListener(this);
-		cameralist_map = (TextView) findViewById(R.id.cameralist_map);
-		cameralist_map.setOnClickListener(this);
+//		cameralist_map = (TextView) findViewById(R.id.cameralist_map);
+//		cameralist_map.setOnClickListener(this);
 
 		loginBundle = this.getIntent().getExtras();
 
@@ -126,9 +126,9 @@ public class CameraList extends passwordInterface implements
 		ifMap = loginBundle.getString("ifMap").toString();
 		ifRecord = loginBundle.getString("ifRecord").toString();
 		ifSnap = loginBundle.getString("ifSnap").toString();
-		if (ifMap.equals("0")) {
-			cameralist_map.setVisibility(TextView.GONE);
-		}
+//		if (ifMap.equals("0")) {
+//			cameralist_map.setVisibility(TextView.GONE);
+//		}
 		// 创建属于主线程的handler
 		handler = new Handler();
 
@@ -489,12 +489,12 @@ public class CameraList extends passwordInterface implements
 		case R.id.cameralist_back:
 			this.finish();
 			break;
-		case R.id.cameralist_map:
-			Intent intent = new Intent(CameraList.this, MapDialog.class);
-			intent.putExtras(loginBundle);
-
-			startActivity(intent);
-			break;
+//		case R.id.cameralist_map:
+//			Intent intent = new Intent(CameraList.this, MapDialog.class);
+//			intent.putExtras(loginBundle);
+//
+//			startActivity(intent);
+//			break;
 
 		}
 	}
